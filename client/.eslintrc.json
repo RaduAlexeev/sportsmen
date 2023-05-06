@@ -16,12 +16,11 @@
         "react"
     ],
     "rules": {
-        "prettier/prettier": "error",
         "no-unused-vars": "error",
         "semi": 2,
         "indent": [
             "error",
-            "tab"
+            2
         ],
         "quotes": 2,
         "comma-dangle": [
