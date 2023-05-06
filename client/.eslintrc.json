@@ -18,18 +18,17 @@
     "rules": {
         "prettier/prettier": "error",
         "no-unused-vars": "error",
-        "semi": "always",
+        "semi": 2,
         "indent": [
             "error",
             "tab"
         ],
-        "quotes": "double",
+        "quotes": 2,
         "comma-dangle": [
             "error",
             "never"
         ],
         "no-mixed-spaces-and-tabs": "error",
-        "no-trailing-spaces": "error",
-        "max-len": "code"
+        "no-trailing-spaces": "error"
     }
 }
