@@ -1,7 +1,9 @@
+import React from "react";
+
 export default function App() {
   return (
-    <div className="">
-      Sportsmen
+    <div>
+      <p>Sportsmen</p>
     </div>
   );
-};
+}
