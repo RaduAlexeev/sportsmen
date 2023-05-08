@@ -28,7 +28,7 @@ export default function Navigation() {
                         <img className="" src={el.logo} alt="" />
                     </div>
                     <div className="w-1/2">
-                        <p className="relative left-4">{el.name}</p>
+                        <p className="relative left-4 text-base">{el.name}</p>
                     </div>
                 </li>
             ))}

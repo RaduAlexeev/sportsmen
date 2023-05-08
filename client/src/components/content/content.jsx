@@ -4,8 +4,8 @@ import Banner from "./banner";
 export default function Content() {
     return (
         <div className="h-content w-full flex justify-center">
-            <div className="w-mainWidth h-full bg-slate-100 flex flex-row justify-between">
-                <div className="relative right-3">
+            <div className="w-mainWidth h-full flex flex-row justify-between">
+                <div className="relative top-1">
                     <Navigation />
                 </div>
                 <div>

@@ -8,7 +8,7 @@ export default function SecondHeader() {
         <div className="w-full flex justify-center items-center h-11 bg-mainRed">
             <div className="w-mainWidth h-full text-white flex flex-row justify-between items-center">
                 {/* for All Sports */}
-                <div className="w-56 h-12 mt-1 relative bg-black -skew-x-30 shadow-shadow-x-black ">
+                <div className="w-56 h-12 mt-1 relative bg-black -skew-x-30 shadow-shadow-x-black left-[14px]">
                     <a className="flex flex-row items-center skew-x-30" href="#">
                         <img className="ml-3" src={menu} alt="" />
                         <p className="text-fontMenu font-bold ml-3 uppercase">All Sports</p>
