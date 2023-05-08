@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        "mainWidth": "1366px"
+        "mainWidth": "1366px",
+        "banner": "1100px",
+        "card": "185px",
+        "image": "160px"
       },
       colors: {
         "mainRed": "#e4282c",
@@ -24,7 +27,10 @@ module.exports = {
         "30": "30deg"
       },
       height: {
-        "content": "516px"
+        "content": "516px",
+        "banner": "500px",
+        "card": "185px",
+        "image": "100px"
       }
     }
   },
