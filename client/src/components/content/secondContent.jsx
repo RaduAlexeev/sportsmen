@@ -1,5 +1,6 @@
 import Agenda from "./agenda";
 import News from "./news";
+import Publicity from "./publicity";
 
 export default function SecondContent() {
     return (
@@ -7,7 +8,7 @@ export default function SecondContent() {
             <div className="w-mainWidth h-[767px] flex flex-row justify-between">
                 <Agenda />
                 <News />
-                <div className="w-[310px] bg-blue-400">3</div>
+                <Publicity />
             </div>
         </div>
     );
