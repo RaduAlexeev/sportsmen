@@ -16,18 +16,19 @@
         "react"
     ],
     "rules": {
-        "no-unused-vars": "error",
-        "semi": 2,
+        "no-unused-vars": "off",
         "indent": [
-            "error",
-            2
+            "off",
+            4
         ],
+        "semi": 2,
         "quotes": 2,
         "comma-dangle": [
             "error",
             "never"
         ],
         "no-mixed-spaces-and-tabs": "error",
-        "no-trailing-spaces": "error"
+        "react/react-in-jsx-scope": 0,
+        "react/jsx-uses-react": 0
     }
 }
