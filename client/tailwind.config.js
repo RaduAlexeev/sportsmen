@@ -22,6 +22,9 @@ module.exports = {
       },
       skew: {
         "30": "30deg"
+      },
+      height: {
+        "content": "516px"
       }
     }
   },
