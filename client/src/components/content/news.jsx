@@ -11,7 +11,7 @@ export default function News() {
                 </div>
             </div>
 
-            <div className="w-full h-[704px] bg-white px-12 py-8 space-y-4">
+            <div className="w-full h-[692px] bg-white px-12 py-8 space-y-4">
                 <CardNews />
                 <CardNews />
                 <CardNews />
