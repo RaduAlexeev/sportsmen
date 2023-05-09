@@ -13,7 +13,8 @@ module.exports = {
       },
       colors: {
         "mainRed": "#e4282c",
-        "burgundy": "#be1f23"
+        "burgundy": "#be1f23",
+        "forFooter": "#252525"
       },
       fontSize: {
         "fontHeader": "27px",
@@ -30,7 +31,8 @@ module.exports = {
         "content": "516px",
         "banner": "500px",
         "card": "185px",
-        "image": "100px"
+        "image": "100px",
+        "footer": "342px"
       }
     }
   },

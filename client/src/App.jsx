@@ -3,6 +3,7 @@ import Header from "./components/header/header";
 import SecondHeader from "./components/header/secondHeader";
 import Content from "./components/content/content";
 import SecondContent from "./components/content/secondContent";
+import Footer from "./components/footer/footer";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <SecondHeader />
       <Content />
       <SecondContent />
+      <Footer />
     </div>
   );
 }
