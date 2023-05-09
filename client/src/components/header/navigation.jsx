@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import football from "../../img/nav/football.png";
 import lupteMartiale from "../../img/nav/lupte.png";
 import lupteLibere from "../../img/nav/lupte-libere.png";
@@ -19,13 +21,27 @@ import moto from "../../img/nav/moto.png";
 
 const db = [{ name: "Fotbal", logo: football }, { name: "Lupte martiale", logo: lupteMartiale }, { name: "Lupte libere", logo: lupteLibere }, { name: "Handball", logo: handbal }, { name: "Volei", logo: volei }, { name: "Baschet", logo: baschet }, { name: "Haltere", logo: haltere }, { name: "Rugby", logo: rugby }, { name: "Tenis", logo: tenis }, { name: "Box", logo: box }, { name: "Ciclism", logo: ciclism }, { name: "Sah", logo: sah }, { name: "Dame", logo: dame }, { name: "Automobilism", logo: auto }, { name: "Dans sportiv", logo: dans }, { name: "Inot", logo: inot }, { name: "Atletism", logo: atletism }, { name: "Motocros", logo: moto }];
 
-export default function Navigation() {
+export default function Navigation(props) {
+    const [show, setShow] = useState(false);
+
+    Navigation.propTypes = {
+        onChange: PropTypes.func.isRequired
+    };
+
     return (
         <ul className="flex flex-col">
             {db.map(el => (
-                <li key={el.name} className="w-56 h-6 bg-white flex flex-row justify-center items-center border-r cursor-pointer border-l border-b border-black">
+                <li key={el.name} className="w-56 h-6 bg-white flex flex-row justify-center items-center hover:bg-[#3d3d3d]  hover:text-white hover:relative hover:w-[236px] cursor-pointer hover:border-none border-r border-l border-b border-black z-30" onMouseOver={() => {
+                    setShow(true);
+                    props.onChange(show);
+                    console.log(show);
+                }} onMouseLeave={() => {
+                    setShow(false);
+                    props.onChange(show);
+                    console.log(show);
+                }} >
                     <div className="w-10 h-full flex justify-center items-center">
-                        <img className="" src={el.logo} alt="" />
+                        <img src={el.logo} alt="" />
                     </div>
                     <div className="w-1/2">
                         <p className="relative left-4 text-base">{el.name}</p>
