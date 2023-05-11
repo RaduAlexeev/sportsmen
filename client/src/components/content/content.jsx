@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navigation from "../header/navigation";
-import SportsInfo from "./all-sports-info/sportsInfo";
+import SportsInfo from "../header/sportsInfo";
 import Banner from "./banner";
 
 export default function Content() {
@@ -13,7 +13,8 @@ export default function Content() {
                     <Navigation onChange={(any) => setValue(any)} />
                 </div>
                 <div>
-                    {value ? <Banner /> : <SportsInfo />}
+                    {/* {value ? <Banner /> : <SportsInfo />} */}
+                    <SportsInfo />
                 </div>
             </div>
         </div>
