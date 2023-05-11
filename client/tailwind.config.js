@@ -22,7 +22,8 @@ module.exports = {
       },
       boxShadow: {
         "shadow-x-black": "-10px 0 20px -5px black, 10px 0 20px -5px black",
-        "shadow-line": "2px 0px 5px black"
+        "shadow-line": "2px 0px 5px black",
+        "innerR": "inset 7px 7px 10px black, inset -7px -7px 10px black"
       },
       skew: {
         "30": "30deg"
@@ -33,6 +34,9 @@ module.exports = {
         "card": "185px",
         "image": "100px",
         "footer": "342px"
+      },
+      fontFamily: {
+        "mainFont": ["Helvetica Neue", "sans-serif"]
       }
     }
   },
