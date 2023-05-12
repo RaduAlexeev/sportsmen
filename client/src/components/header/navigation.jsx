@@ -31,7 +31,7 @@ export default function Navigation(props) {
     return (
         <ul className="flex flex-col">
             {db.map(el => (
-                <li key={el.name} className="w-56 h-6 bg-white flex flex-row justify-center items-center hover:bg-[#3d3d3d]  hover:text-white hover:relative hover:w-[236px] cursor-pointer hover:border-none border-r border-l border-b border-black z-30" onMouseOver={() => {
+                <li key={el.name} className="w-56 h-6 bg-white text-black flex flex-row justify-center items-center hover:bg-[#3d3d3d]  hover:text-white hover:relative hover:w-[236px] cursor-pointer hover:border-none border-r border-l border-b border-black z-30" onMouseOver={() => {
                     setShow(true);
                     props.onChange(show);
                     console.log(show);
@@ -44,7 +44,7 @@ export default function Navigation(props) {
                         <img src={el.logo} alt="" />
                     </div>
                     <div className="w-1/2">
-                        <p className="relative left-4 text-base">{el.name}</p>
+                        <p className="relative left-4 text-[17px] font-medium">{el.name}</p>
                     </div>
                 </li>
             ))}

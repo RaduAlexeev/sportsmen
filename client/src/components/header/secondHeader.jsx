@@ -11,13 +11,13 @@ export default function SecondHeader() {
                 <div className="w-56 h-12 mt-1 relative bg-black rounded-b-lg -skew-x-30 shadow-shadow-x-black left-[14px]">
                     <a className="flex flex-row items-center skew-x-30" href="#">
                         <img className="ml-3" src={menu} alt="" />
-                        <p className="text-fontMenu font-bold ml-3 uppercase">All Sports</p>
+                        <p className="text-[22px] tracking-wider font-black uppercase">All Sports</p>
                     </a>
                 </div>
 
                 {/* for nav */}
                 <div className="ml-8">
-                    <ul className="flex flex-row space-x-4 uppercase text-sm">
+                    <ul className="flex flex-row space-x-4 uppercase text-sm font-menuFont">
                         <li><a href="#">Acasa</a></li>
                         <img src={shape} alt="|" />
                         <li><a href="#">Agenda Sportiva</a></li>
@@ -39,7 +39,7 @@ export default function SecondHeader() {
                 {/* for cautare */}
                 <div>
                     <form className="">
-                        <input className="text-left pl-2 placeholder-right" type="text" placeholder="Cautare" /* value="" onChange="" */ />
+                        <input className="text-left pl-2 placeholder-right w-[235px]" type="text" placeholder="Cautare" /* value="" onChange="" */ />
                         <button className="relative right-6" type="submit"><img src={search} alt="search" /></button>
                     </form>
                 </div>
@@ -48,6 +48,10 @@ export default function SecondHeader() {
                 <button className="bg-burgundy h-full w-9 text-lg flex flex-col justify-center items-center">
                     <p>Ro</p>
                     <img src={vector} alt="vector" />
+                    <div className="absolute w-[88px] h-[60px] bg-burgundy top-[140px] right-[268px]">
+                        <p>Русский</p>
+                        <p>English</p>
+                    </div>
                 </button>
             </div>
         </div >

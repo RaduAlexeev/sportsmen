@@ -10,7 +10,7 @@ export default function Header() {
                     <img src={logo} alt="" />
                     <h1 className="text-fontHeader uppercase italic font-bold ml-7">Portal sportiv moldovenesc</h1>
                 </div>
-                <div className="flex flex-row mr-8 w-80 item-center justify-between h-8 text-[20px] text-mainRed">
+                <div className="flex flex-row mr-8 w-80 item-center justify-between h-8 tracking-tight text-[20px] text-mainRed">
                     <a className="flex flex-row" href="#" >
                         <img className="mr-2" src={favorite} alt="image favorite" />
                         <p>Favorite</p>
