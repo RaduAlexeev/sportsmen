@@ -6,3 +6,8 @@
     font-family: "Helvetica Neue";
     src: url("./font/HelveticaNeueCyr-Thin.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("./font/ofont.ru_Myriad\ Pro.ttf") format("truetype");
+}

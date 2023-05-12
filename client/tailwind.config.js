@@ -36,7 +36,8 @@ module.exports = {
         "footer": "342px"
       },
       fontFamily: {
-        "mainFont": ["Helvetica Neue", "sans-serif"]
+        "mainFont": ["Helvetica Neue", "sans-serif"],
+        "menuFont": ["Myriad Pro", "Arial", "sans-serif"]
       }
     }
   },
