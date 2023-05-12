@@ -13,8 +13,8 @@ export default function Content() {
                     <Navigation onChange={(any) => setValue(any)} />
                 </div>
                 <div>
-                    {/* {value ? <Banner /> : <SportsInfo />} */}
-                    <SportsInfo />
+                    {value ? <Banner /> : <SportsInfo />}
+                    {/* <SportsInfo /> */}
                 </div>
             </div>
         </div>
