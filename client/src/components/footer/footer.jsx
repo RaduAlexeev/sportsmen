@@ -8,7 +8,10 @@ export default function Footer() {
             <div className="w-mainWidth h-full flex flex-col justify-around text-white">
                 <div className="flex flex-row tracking-tight">
                     <FooterMenu />
-                    <Map />
+                    {/* <Map /> */}
+                    <div className="w-[450px] flex flex-col justify-center text-black bg-white ml-16 text-center">
+                        Карта ...
+                    </div>
                 </div>
                 <FooterInfo />
             </div>

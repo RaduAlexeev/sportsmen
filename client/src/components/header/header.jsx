@@ -1,6 +1,7 @@
 import logo from "../../img/header/logo.png";
 import login from "../../img/header/login.png";
 import favorite from "../../img/header/favorite.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -11,15 +12,22 @@ export default function Header() {
                     <h1 className="text-fontHeader uppercase italic font-bold ml-7">Portal sportiv moldovenesc</h1>
                 </div>
                 <div className="flex flex-row mr-8 w-80 item-center justify-between h-8 tracking-tight text-[20px] text-mainRed">
-                    <a className="flex flex-row" href="#" >
-                        <img className="mr-2" src={favorite} alt="image favorite" />
-                        <p>Favorite</p>
-                    </a>
 
-                    <a className="flex flex-row" href="#">
-                        <img className="mr-2" src={login} alt="image login" />
-                        <p className="w-28">Contul meu</p>
-                    </a>
+                    <Link to="favorite">
+                        <a className="flex flex-row" href="#" >
+                            <img className="mr-2" src={favorite} alt="image favorite" />
+                            <p>Favorite</p>
+                        </a>
+                    </Link>
+
+
+                    <Link to="/contul-meu">
+                        <a className="flex flex-row" href="#">
+                            <img className="mr-2" src={login} alt="image login" />
+                            <p className="w-28">Contul meu</p>
+                        </a>
+                    </Link>
+
                 </div>
             </div>
         </div>
