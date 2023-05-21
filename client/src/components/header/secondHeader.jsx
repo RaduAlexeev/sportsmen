@@ -2,19 +2,14 @@ import menu from "../../img/second-header/menu.png";
 import shape from "../../img/second-header/shape.png";
 import search from "../../img/second-header/search.png";
 import vector from "../../img/second-header/vector.png";
+import DropdownMenu from "../routes/dropdownMenu";
+import LanguageSelecter from "./languageSelecter";
 
 export default function SecondHeader() {
     return (
         <div className="w-full flex justify-center items-center h-11 bg-mainRed">
             <div className="w-mainWidth h-full text-white flex flex-row justify-between items-center">
-                {/* for All Sports */}
-                <div className="w-56 h-12 mt-1 relative bg-black rounded-b-lg -skew-x-30 shadow-shadow-x-black left-[14px]">
-                    <a className="flex flex-row items-center skew-x-30" href="#">
-                        <img className="ml-3" src={menu} alt="" />
-                        <p className="text-[22px] tracking-wider font-black uppercase">All Sports</p>
-                    </a>
-                </div>
-
+                <DropdownMenu />
                 {/* for nav */}
                 <div className="ml-8">
                     <ul className="flex flex-row space-x-4 uppercase text-sm font-menuFont">
@@ -45,14 +40,7 @@ export default function SecondHeader() {
                 </div>
 
                 {/* for language */}
-                <button className="bg-burgundy h-full w-9 text-lg flex flex-col justify-center items-center">
-                    <p>Ro</p>
-                    <img src={vector} alt="vector" />
-                    <div className="absolute w-[88px] h-[60px] bg-burgundy top-[140px] right-[268px]">
-                        <p>Русский</p>
-                        <p>English</p>
-                    </div>
-                </button>
+                <LanguageSelecter />
             </div>
         </div >
     );
