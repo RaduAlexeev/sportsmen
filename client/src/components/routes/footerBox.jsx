@@ -7,9 +7,8 @@ export default function FooterBox({ children }) {
 
     return (
         <div className="bg-forFooter w-full h-footer flex justify-center">
-            <div className="w-mainWidth flex flex-row justify-between items-center bg-black">
-                {children}
+            <div className="w-mainWidth h-full flex flex-row justify-between items-center bg-yellow-500">
             </div>
-        </div>
+        </div >
     );
 }
