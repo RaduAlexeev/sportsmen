@@ -4,8 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/routes/error-page";
 import App from "./App";
-import Footer from "./components/footer/footer";
-import SecondHeader from "./components/header/secondHeader";
+import SportsPage from "./components/routes/sports-page";
 
 const router = createBrowserRouter([
     {
@@ -14,13 +13,8 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/footer",
-        element: <Footer />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/header",
-        element: <SecondHeader />,
+        path: "/sports-page",
+        element: <SportsPage />,
         errorElement: <ErrorPage />
     }
 ]);

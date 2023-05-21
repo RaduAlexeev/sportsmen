@@ -32,7 +32,7 @@ export default function SportsInfo() {
     ];
 
     return (
-        <div className="w-[1130px] relative right-[px] z-20 h-[432px] bg-[#3d3d3d] flex flex-row">
+        <div className="w-[1120px] relative right-2 z-20 h-[432px] bg-[#3d3d3d] flex flex-row">
             <div className="w-1/3 flex flex-col justify-center items-center space-y-5">
                 <CardInfo head={head[0]} text={text} logo={logo[0]} />
                 <CardInfo head={head[1]} text={text} logo={logo[1]} />
