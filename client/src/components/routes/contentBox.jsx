@@ -7,7 +7,7 @@ export default function ContentBox({ children }) {
 
     return (
         <div className="w-full h-[1400px] flex justify-center">
-            <div className="w-mainWidth flex flex-row justify-between items-center bg-violet-900">
+            <div className="w-mainWidth flex flex-row justify-center items-center bg-violet-900">
                 {children}
             </div>
         </div>
