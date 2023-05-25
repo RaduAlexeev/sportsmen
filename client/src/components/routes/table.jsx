@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import AsideLeague from "./asideLeague";
+import AsideTopPlayer from "./asideTopPlayer";
 
 export default function Table({ statistics }) {
     Table.propTypes = {
@@ -33,8 +35,8 @@ export default function Table({ statistics }) {
     );
 
     return (
-        <div className="inline-flex">
-            <div className="w-[790px] bg-white flex-col">
+        <div className="inline-flex relative left-2">
+            <div className="w-[780px] bg-white flex-col">
                 <div className="w-full h-[56px] bg-[#898989] flex justify-around items-center uppercase tracking-wide font-sans font-medium">
                     {"stiri recente, campionate, echipe, jucatori, antrenori".split(",").map((el, index) => (
                         <a className="hover:text-white" key={index.toString()} href="#">{el}</a>

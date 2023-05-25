@@ -1,5 +1,7 @@
 import Footer from "../footer/footer";
 import LanguageSelecter from "../header/languageSelecter";
+import AsideLeague from "./asideLeague";
+import AsideTopPlayer from "./asideTopPlayer";
 import Container from "./container";
 import ContentBox from "./contentBox";
 import DropdownMenu from "./dropdownMenu";
@@ -56,12 +58,13 @@ export default function SportsPage() {
             </SecondHeaderBox>
 
             <ContentBox>
+                <AsideLeague />
                 <Table statistics={clubs} />
+                <AsideTopPlayer />
             </ContentBox>
 
-            <FooterBox>
-                {/* <Footer /> */}
-            </FooterBox>
+            {/* <FooterBox>
+            </FooterBox> */}
 
         </Container>
     );
