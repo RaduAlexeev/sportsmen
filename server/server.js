@@ -1,12 +1,13 @@
 import express from "express";
 const app = express();
+const port = 3002;
 
 // Обработка запросов 
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
     res.send("Привет, мир!");
 })
 // Обработка запорсов.
 
-app.listen(3000, () => {
-    console.log("Сервер запущен на порту");
+app.listen(port, () => {
+    console.log(`Сервер запущен на порту ${port}`);
 })
