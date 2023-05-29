@@ -9,7 +9,7 @@ export default function LeagueSubsection({ subsection }) {
         <div className="block">
             {
                 subsection.map((el, index) => (
-                    <button key={index} className="relative left-4 w-[251px] h-[36px] bg-white border border-b-2 border-[#d7d7d7] text-black font-menuFont font-semibold tracking-widest flex items-center">
+                    <button key={index} className="relative left-8 w-[220px] h-[36px] bg-white border border-b-2 border-[#d7d7d7] text-black font-menuFont font-semibold tracking-widest flex items-center">
                         <p className="relative left-8">{el}</p>
                     </button>
                 ))}

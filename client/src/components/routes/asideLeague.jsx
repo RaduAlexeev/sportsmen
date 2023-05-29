@@ -43,7 +43,7 @@ export default function AsideLeague() {
             {
                 databaseLeague.map((el, index) => (
                     <div key={index} >
-                        <button onClick={() => handleClick(index)} className="relative left-4 w-[251px] h-[36px] bg-[#656d79] border border-b-3 border-[#4d5460] text-white font-menuFont font-semibold tracking-widest flex items-center text-sm">
+                        <button onClick={() => handleClick(index)} className="relative left-4 w-[251px] h-[36px] bg-[#404549] border border-b-3 border-[#4d5460] text-white font-menuFont font-semibold tracking-widest flex items-center text-sm">
                             <p className="relative left-8">{el.title}</p>
                         </button>
                         {clickedIndex === index && <LeagueSubsection subsection={el.subsection} />}
